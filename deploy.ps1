@@ -23,4 +23,7 @@ kubectl get services
 Write-Host "Fetching main service..."
 kubectl get service "$NAME-service"
 
+Write-Host "Running minikube service..."
+minikube service "$NAME-service"
+
 Write-Host "Deployment complete."
